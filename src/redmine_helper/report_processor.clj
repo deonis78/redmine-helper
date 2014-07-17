@@ -1,6 +1,7 @@
 (ns redmine_helper.report_processor
   (:require [clojure.java.io :as io])
-  (:require [clojure.string :as su]))
+  (:require [clojure.string :as su])
+  (:require [clojure.data.csv :as csv]))
 
 (def coefficients {"Simple" 0.5, "Normal" 1, "Hard" 1.5, "Very Hard" 2})
 
